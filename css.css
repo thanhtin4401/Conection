@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+:root {
+    --animate-delay: 0.5s;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    background-color: #464646;
+}
+
+.content__container {
+    padding: 2rem;
+    position: relative;
+}
+
+.title h1 {
+    color: white;
+    font-size: 6rem;
+    line-height: 6rem;
+    position: relative;
+    z-index: -2;
+    font-weight: 600;
+}
+
+.title p {
+    color: white;
+}
+
+.email {
+    margin-bottom: 0.5rem;
+}
+
+.content {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.content .btn-item {}
+
+.content .btn-item .item {
+    color: white;
+    font-size: 1rem;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .btn-item i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.background {
+    position: absolute;
+    height: 48rem;
+    width: 14rem;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.background-yellow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: -3;
+    height: 100vh;
+    background-image: url(https://res.cloudinary.com/dvzingci9/image/upload/v1654488990/My-portfolio/yellow_ejx9w0.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 12rem;
+    animation: animation__background 1s 0.5s ease-in-out;
+}
+
+.me {
+    /* position: absolute; */
+    /* top: 0;
+    right: -17rem;
+    width: 339px;
+    height: 769px;
+    z-index: -2; */
+}
+
+@keyframes animation__background {
+    from {
+        background-position-x: -20rem;
+    }
+    to {
+        background-position-x: 12rem;
+    }
+}
